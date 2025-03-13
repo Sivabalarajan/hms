@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "456984091609",
+    "project_id": "hms-app-c182a",
+    "storage_bucket": "hms-app-c182a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456984091609:android:5f87cbc3c876462a2617c8",
+        "android_client_info": {
+          "package_name": "com.android.hms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmtHmTDdezZpqhN-7y2yKiyh0v91ckp2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
