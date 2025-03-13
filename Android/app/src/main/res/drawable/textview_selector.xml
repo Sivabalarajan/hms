@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@android:color/holo_blue_light"/>-->
+
+    <item android:drawable="@android:color/darker_gray" android:state_pressed="true">
+    <!--<item android:drawable="?attr/colorLighter" android:state_pressed="true">-->
+        <shape>
+            <solid android:color="@android:color/background_light"/>
+            <stroke android:width="0sp"/>
+            <corners android:radius="10sp"/>
+            <padding android:start="0sp" android:top="0sp" android:end="0sp" android:bottom="0sp" />
+        </shape>
+    </item>
+    <!-- <item android:drawable="@android:color/holo_blue_light" android:state_pressed="true"/>
+    <item android:drawable="@android:color/holo_blue_dark"/> -->
+</selector>
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/colorHighlight" />
+    <item android:drawable="@android:color/transparent" />
+</selector> -->
