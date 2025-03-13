@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tvTenant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tenant" />
+    <TextView
+        android:id="@+id/tvBuilding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Building" />
+    <TextView
+        android:id="@+id/tvHouse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="House" />
+    <TextView
+        android:id="@+id/tvDaysPending"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingEnd="5dp"
+        android:gravity="end"
+        android:text="Days Pending" />
+    <ImageButton
+        android:id="@+id/btnPayRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_rent_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        app:tint="@color/rent_pay_color"
+        android:contentDescription="Pay House Rent" />
+    <ImageButton
+        android:id="@+id/btnRemoveTenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_tenant_remove_24"
+        android:padding="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/remove_tenant_color"
+        android:contentDescription="Remove Tenant" />
+</LinearLayout>

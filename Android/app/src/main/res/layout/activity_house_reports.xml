@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHouseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="15sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="House:" />
+
+    <TextView
+        android:id="@+id/tvHouseVacant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="House Vacant:" />
+
+    <TextView
+        android:id="@+id/tvHouseDepositPaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Deposit Paid:" />
+
+    <TextView
+        android:id="@+id/tvHouseRentPaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Rent Paid:" />
+
+    <TextView
+        android:id="@+id/tvHouseRentDelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Rent Delay:" />
+
+    <TextView
+        android:id="@+id/tvNotClosedHouseRepairDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:paddingStart="10sp"
+        android:text="House open repairs details are below:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRepairs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

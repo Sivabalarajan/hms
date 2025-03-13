@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tvTenantHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tenant"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvBuildingHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Building"
+        android:textStyle="bold"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvHouseHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="House"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvMonthHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Month"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvDelayDaysHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Delayed Days"
+        android:textStyle="bold"
+        android:paddingEnd="5dp"
+        android:gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+</LinearLayout>

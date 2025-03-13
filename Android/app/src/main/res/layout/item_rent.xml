@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tvTenant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tenant" />
+    <TextView
+        android:id="@+id/tvHouse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="House" />
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="15dp"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:text="Amount" />
+    <TextView
+        android:id="@+id/tvDelay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="15dp"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:text="Delay" />
+    <TextView
+        android:id="@+id/tvPaidOn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Paid On" />
+    <ImageButton
+        android:id="@+id/btnRentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_notes_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:tint="@color/highlight_color"
+        android:contentDescription="Rent Info" />
+    <ImageButton
+        android:id="@+id/btnRemoveRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_delete_forever_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:tint="@color/remove_color"
+        android:contentDescription="Remove Rent" />
+
+</LinearLayout>

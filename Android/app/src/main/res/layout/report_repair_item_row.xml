@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/tvRepairDescription"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="5dp"
+        android:text="Desc"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/tvRepairBuildingHouse"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="5dp"
+        android:text="B / H"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/tvRepairAmount"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:paddingStart="2dp"
+        android:paddingEnd="4dp"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:gravity="end|center_horizontal" />
+    <TextView
+        android:id="@+id/tvRepairRaisedDate"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/tvRepairStatus"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:padding="2dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:gravity="center_vertical" />
+    <ImageButton
+        android:id="@+id/btnRepairInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_notes_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="2dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:tint="@color/highlight_color"
+        android:contentDescription="Repair Info" />
+    <ImageButton
+        android:id="@+id/btnCloseRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_check_circle_outline_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="2dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:tint="@color/task_close_primary"
+        android:contentDescription="Close Repair" />
+    <ImageButton
+        android:id="@+id/btnRemoveRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_delete_forever_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="2dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="1dp"
+        app:tint="@color/remove_color"
+        android:contentDescription="Remove Repair" />
+</LinearLayout>

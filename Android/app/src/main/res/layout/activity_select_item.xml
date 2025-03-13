@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3sp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/item_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/item_search_view"
+        android:smoothScrollbar="true"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:animationCache="true"/>
+    <TextView
+        android:id="@+id/empty_text_view"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="match_parent"
+        android:text="Loading... Please wait..."/>
+</RelativeLayout>
+    <!-- <Space
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1sp"
+            android:layout_marginEnd="1sp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/all_home"
+                android:layout_width="50sp"
+                android:layout_height="26sp"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="All"
+                android:background="@drawable/btn_segmented"/>
+            <Button
+                android:id="@+id/favorites_home"
+                android:layout_width="wrap_content"
+                android:layout_height="26sp"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/all_home"
+                android:layout_marginStart="-1sp"
+                android:layout_marginEnd="-1sp"
+                android:text="Favorites"
+                android:background="@drawable/btn_segmented"/>
+            <Button
+                android:id="@+id/mine_home"
+                android:layout_width="55sp"
+                android:layout_height="26sp"
+                android:layout_toEndOf="@+id/favorites_home"
+                android:textSize="13sp"
+                android:layout_marginStart="0sp"
+                android:layout_marginEnd="2sp"
+                android:gravity="center"
+                android:text="Mine"
+                android:background="@drawable/btn_segmented" />
+        </RelativeLayout> -->

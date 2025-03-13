@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTenantHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tenant"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tvHouseHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="House"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tvAmountHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="$"
+        android:textStyle="bold"
+        android:paddingEnd="15dp"
+        android:gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tvDelayDaysHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Delay"
+        android:textStyle="bold"
+        android:paddingEnd="15dp"
+        android:gravity="end"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tvPaidOnHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Paid"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvRentInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/tvRemoveRent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true" />
+</LinearLayout>

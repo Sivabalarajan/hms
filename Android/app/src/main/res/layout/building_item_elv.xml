@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="40dp"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+<!-- PLEASE DO NOT CHANGE PADDING START 40dp AS IT IS USED TO SHOW THE EXPAND AND COLLAPSE ICON -->
+
+    <TextView
+        android:id="@+id/tvBuildingName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/btnInitiateRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_repair_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="15dp"
+        app:tint="@color/repair_color"
+        android:contentDescription="Building Repair" />
+    <ImageView
+        android:id="@+id/btnAddHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rounded_add_house_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="15dp"
+        app:tint="@color/add_color"
+        android:contentDescription="Add House" />
+
+    <ImageView
+        android:id="@+id/btnEditBuilding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_edit_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="15dp"
+        app:tint="@color/edit_color"
+        android:contentDescription="Edit Building" />
+</LinearLayout>

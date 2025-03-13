@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvHouseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tvHouseInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="?android:attr/textColorSecondary" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPayRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_rent_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="15dp"
+        app:tint="@color/rent_pay_color"
+        android:contentDescription="Pay House Rent" />
+
+    <ImageButton
+        android:id="@+id/btnInitiateRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rounded_task_add_24"
+        android:padding="15dp"
+        app:tint="@color/repair_color"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Initiate House Repair" />
+
+    <ImageButton
+        android:id="@+id/btnAssignOrRemoveTenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_tenant_add_24"
+        android:padding="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/assign_tenant_color"
+        android:contentDescription="Assign or Remove Tenant" />
+
+    <ImageButton
+        android:id="@+id/btnEditHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_edit_24"
+        android:padding="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/edit_color"
+        android:contentDescription="Edit House" />
+</LinearLayout>

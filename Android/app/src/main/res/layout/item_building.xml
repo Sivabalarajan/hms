@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        android:padding="3dp">
+
+        <!-- Building Name -->
+        <TextView
+            android:id="@+id/tvBuildingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Building Name"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Building Address -->
+        <TextView
+            android:id="@+id/tvBuildingAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="Building Address"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="2dp" />
+
+        <!-- <TextView
+            android:id="@+id/tvBuildingArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area: 3000 sq ft"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnEditBuilding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Edit"
+            android:src="@drawable/round_edit_24"
+            app:tint="@color/edit_color" />
+
+        <ImageButton
+            android:id="@+id/btnRemoveBuilding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:contentDescription="Remove"
+            android:src="@drawable/round_delete_forever_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/remove_color" /> -->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

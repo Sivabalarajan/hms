@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:padding="1dp">
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="start"
+        android:text="User Name"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:padding="2dp" />
+    <TextView
+        android:id="@+id/tvEmailOrPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="start"
+        android:text="Email / Phone:"
+        android:textSize="14sp"
+        android:padding="2dp" />
+    <!-- <TextView
+        android:id="@+id/tvUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Phone"
+        android:textSize="14sp"
+        android:padding="2dp" /> -->
+    <ImageButton
+        android:id="@+id/btnRemoveUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:padding="4dp"
+        android:layout_gravity="end"
+        android:contentDescription="Remove"
+        android:src="@drawable/round_delete_forever_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/remove_color" />
+</LinearLayout>

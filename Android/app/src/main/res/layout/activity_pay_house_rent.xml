@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="10dp"
+    android:background="@color/lightest_gray"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <TextView
+        android:id="@+id/etHouseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp" />
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This will set the house as rent paid. Please enter the relevant info to make the rent paid."
+        android:textSize="18sp"
+        android:paddingBottom="10dp" /> -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter rent amount paid">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRentAmountPaid"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Delay in payment (in days)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRentDelay"
+            android:text="0"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select rent paid date *">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRentPaidDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter rental notes here">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRentNotes"
+            android:maxLines="3"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/chkReviseHouseRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Revise house rent if there is a change in amount paid"/>
+    <CheckBox
+        android:id="@+id/chkHouseDepositPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="House security deposit amount is paid"/>
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingBottom="10dp"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="start"
+            android:layout_gravity="center"
+            app:icon="@drawable/outline_cancel_24"
+            android:text="Cancel" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnRentPaid"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:icon="@drawable/outline_rent_24"
+            android:text="Pay House Rent" />
+        <!-- <Button
+            android:id="@+id/btnRemovePaidRent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:icon="@drawable/round_delete_forever_24"
+            android:text="Remove Paid Rent" /> -->
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="5dp">
+
+<!-- <androidx.appcompat.widget.SearchView
+    android:id="@+id/searchView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:queryHint="Search..."
+    android:iconifiedByDefault="false" /> -->
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/not_closed_repairs_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.android.hms.ui.fragments.NotClosedRepairsFragment"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".ui.fragments.NotClosedRepairsFragment"
+    tools:listitem="@layout/report_repair_item_row" />
+
+</LinearLayout>
