@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <!-- <item
+            android:id="@+id/action_show_building_info"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/round_info_outline_24"
+            android:title="Show Building Info"/> -->
+        <item
+            android:id="@+id/action_show_building_report"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/outline_report_24"
+            android:title="Building Report"/>
+        <item
+            android:id="@+id/action_initiate_repair"
+            android:iconTint="@color/repair_color"
+            android:icon="@drawable/rounded_task_add_24"
+            android:title="Initiate Building Repair"/>
+        <item
+            android:id="@+id/action_submit_expense"
+            android:iconTint="@color/repair_color"
+            android:icon="@drawable/round_payment_24"
+            android:title="Submit Building Expense"/>
+        <item
+            android:id="@+id/action_view_houses"
+            app:tint="@color/highlight_color"
+            android:icon="@drawable/round_houses_24"
+            android:title="View Houses"/>
+        <item
+            android:id="@+id/action_add_house"
+            android:iconTint="@color/add_color"
+            android:icon="@drawable/rounded_add_house_24"
+            android:title="Add House"/>
+        <item
+            android:id="@+id/action_edit_building"
+            android:iconTint="@color/edit_color"
+            android:icon="@drawable/round_edit_24"
+            android:title="Change Building Details"/>
+        <item
+            android:id="@+id/action_remove_building"
+            android:iconTint="@color/remove_color"
+            android:icon="@drawable/round_delete_forever_24"
+            android:title="Remove Building"/>
+    </menu>

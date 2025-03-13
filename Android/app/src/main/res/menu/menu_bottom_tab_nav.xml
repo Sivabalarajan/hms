@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/round_dashboard_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/navigation_buildings"
+        android:icon="@drawable/round_building_24"
+        android:title="Buildings" />
+
+    <item
+        android:id="@+id/navigation_houses"
+        android:icon="@drawable/round_houses_24"
+        android:title="Houses" />
+
+    <item
+        android:id="@+id/navigation_buildings_houses"
+        android:icon="@drawable/outline_building_home_24"
+        android:title="Buildings and Houses" />
+
+    <!-- <item
+        android:id="@+id/navigation_rent"
+        android:icon="@drawable/outline_rent_24"
+        android:title="Rentals" /> -->
+
+    <item
+        android:id="@+id/navigation_repairs"
+        android:icon="@drawable/round_repair_24"
+        android:title="Repairs" />
+
+</menu>

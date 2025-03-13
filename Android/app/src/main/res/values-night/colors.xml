@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colors for Night Mode -->
+    <color name="repair_color">#FFB74D</color> <!-- Repair -->
+    <color name="add_color">#81C784</color> <!-- Add House or Building -->
+    <color name="rent_pay_color">#64B5F6</color> <!-- Paying Rent -->
+    <color name="assign_tenant_color">#4DD0E1</color> <!-- Tenant Assign -->
+    <color name="remove_tenant_color">#E57373</color> <!-- Tenant Remove or House Vacating -->
+    <color name="edit_color">#FFB74D</color> <!-- Edit House/Building (Light Orange for Night) -->
+    <color name="remove_color">#E57373</color> <!-- Delete House/Building (Light Red for Night) -->
+    <color name="light_color">#E0E0E0</color> <!-- Slightly darker light shade for night mode -->
+    <color name="background_color">#303030</color> <!-- Light gray (almost white) -->
+    <color name="highlight_color">#FFAB40</color> <!-- Bright yellow for highlighting -->
+
+    <!-- Selected item background (muted pastel color) -->
+    <color name="selected_item">#1F618D</color> <!-- Muted pastel teal -->
+    <color name="default_item">#212F3D</color> <!-- Off-black/dark gray background -->
+
+    <!-- Text colors -->
+    <color name="selected_text">#EAEDED</color> <!-- Soft white -->
+    <color name="default_text">#BDC3C7</color> <!-- Light gray -->
+
+    <color name="task_close_primary">#81C784</color>
+    <color name="task_close_secondary">#A5D6A7</color>
+    <color name="ripple_effect">#66BB6A</color>
+
+    <color name="green_color">#1B5E20</color>
+    <color name="color_add_building">#81C784</color>
+    <color name="color_add_building_dark">#388E3C</color>
+
+    <color name="light_gray">#A9A9A9</color> <!-- Darker shade for night mode -->
+    <color name="light_gray_medium">#8A8A8A</color>
+    <color name="lighter_gray">#707070</color>
+    <color name="lighter_gray_medium">#505050</color>
+    <color name="lightest_gray">#303030</color>
+</resources>

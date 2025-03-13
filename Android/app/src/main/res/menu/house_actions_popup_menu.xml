@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <item
+            android:id="@+id/action_show_house_info"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/round_info_outline_24"
+            android:title="Show House Info"/>
+        <item
+            android:id="@+id/action_show_house_report"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/outline_report_24"
+            android:title="House Report"/>
+        <item
+            android:id="@+id/action_mark_deposit_as_paid"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/rounded_deposit_money_bag_24"
+            android:title="Mark Deposit as Paid"/>
+        <item
+            android:id="@+id/action_pay_rent"
+            app:tint="@color/rent_pay_color"
+            android:icon="@drawable/outline_rent_24"
+            android:title="Pay House Rent"/>
+        <item
+            android:id="@+id/action_initiate_repair"
+            android:iconTint="@color/repair_color"
+            android:icon="@drawable/rounded_task_add_24"
+            android:title="Initiate House Repair"/>
+        <item
+            android:id="@+id/action_submit_expense"
+            android:iconTint="@color/repair_color"
+            android:icon="@drawable/round_payment_24"
+            android:title="Submit House Expense"/>
+        <item
+            android:id="@+id/action_assign_tenant"
+            android:iconTint="@color/assign_tenant_color"
+            android:icon="@drawable/outline_tenant_add_24"
+            android:title="Assign Tenant"/>
+        <item
+            android:id="@+id/action_make_house_vacant"
+            android:iconTint="@color/remove_tenant_color"
+            android:icon="@drawable/outline_tenant_remove_24"
+            android:title="Make House Vacant"/>
+        <item
+            android:id="@+id/action_edit_house"
+            android:iconTint="@color/edit_color"
+            android:icon="@drawable/round_edit_24"
+            android:title="Change House Details"/>
+        <item
+            android:id="@+id/action_remove_house"
+            android:iconTint="@color/remove_color"
+            android:icon="@drawable/round_delete_forever_24"
+            android:title="Remove House"/>
+    </menu>

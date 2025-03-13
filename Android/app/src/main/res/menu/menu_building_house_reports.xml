@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_all_repairs"
+        android:title="All Repairs"
+        android:icon="@drawable/round_house_repair_24"
+        android:iconTint="@android:color/primary_text_dark"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_not_closed_repairs"
+        android:title="Open Repairs"
+        android:icon="@drawable/round_house_repair_24"
+        android:iconTint="@android:color/primary_text_dark"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_rents"
+        android:title="Rents"
+        android:icon="@drawable/outline_rent_24"
+        android:iconTint="@android:color/primary_text_dark"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+</menu>

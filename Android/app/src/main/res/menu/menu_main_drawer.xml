@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rental_summary_report"
+            android:icon="@drawable/dollar_rental_summary_24"
+            android:title="Rental Summary Report"/>
+        <item
+            android:id="@+id/nav_repairs_summary_report"
+            android:icon="@drawable/round_repair_24"
+            android:title="Repairs Summary Report"/>
+        <item
+            android:id="@+id/nav_expenses_summary_report"
+            android:icon="@drawable/round_payment_24"
+            android:title="Expenses Summary Report"/>
+        <item
+            android:id="@+id/nav_expenses_and_repairs_summary_report"
+            android:icon="@drawable/expenses_summary_dollar_check_24"
+            android:title="Expenses + Repairs Summary"/>
+        <item
+            android:id="@+id/nav_view_all_rents"
+            android:icon="@drawable/round_checklist_rent_24"
+            android:title="View All Rents"/>
+        <item
+            android:id="@+id/nav_view_all_repairs"
+            android:icon="@drawable/outline_tools_repair_drill_24"
+            android:title="View All Repairs"/>
+        <item
+            android:id="@+id/nav_view_all_expenses"
+            android:icon="@drawable/round_attach_money_24"
+            android:title="View All Expenses"/>
+        <item
+            android:id="@+id/nav_users_management"
+            android:icon="@drawable/baseline_people_outline_24"
+            android:title="Users Management"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/round_logout_24"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,95 @@
+<resources>
+
+    <style name="ToolBarStyle" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="tint">@android:color/white</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+    </style>
+
+    <style name="ToolBarTextStyle" parent="ToolBarStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+<!--    <style name="Preference" parent="@style/PreferenceThemeOverlay.v14.Material">-->
+<!--        <item name="tint">?attr/colorPrimary</item>-->
+<!--    </style>-->
+
+    <style name="DrawerHamburgerStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+        <item name="tint">@android:color/white</item>
+        <item name="tintMode">@android:color/white</item>
+        <item name="iconTint">@android:color/white</item>
+    </style>
+
+    <style name="UsernameStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DateTimeStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="SecondaryText14Style" parent="android:Widget.TextView">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="DarkGrayText12Style" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="DarkGrayText14Style" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="DarkGrayText16Style" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="DarkGrayText18Style" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="colorControlHighlight">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="LoginButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+
+</resources>

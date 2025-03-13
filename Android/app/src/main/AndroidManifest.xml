@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.hms">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:node="remove" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".MyHMSApp"
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HMS"
+        tools:targetApi="31">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.android.hms.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/outline_notes_24" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/highlight_color" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name=".ui.activities.BuildingReportsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.HouseReportsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.RepairActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.ExpenseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.OwnerMainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Theme.HMS.NoActionBar" />
+        <activity
+            android:name=".ui.activities.TenantMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity android:name=".ui.activities.RepairsReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.RentNotPaidReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.VacantHousesReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.RentsReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.RentLatePayersReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.AddBuildingActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.AddHouseActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.AssignTenantActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.PayHouseRentActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.MakeHouseVacantActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.AddUserActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.ManageUsersActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.DepositNotPaidReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.activities.ExpensesReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.reports.RentsSummaryReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.reports.ExpensesSummaryReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".ui.reports.ExpensesAndRepairsSummaryReportActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name=".ui.reports.RepairsSummaryReportActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

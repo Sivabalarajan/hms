@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="repair_color">#FFA726</color> <!-- Repair -->
+    <color name="add_color">#66BB6A</color> <!-- Add House or Building -->
+    <color name="rent_pay_color">#42A5F5</color> <!-- Paying Rent -->
+    <color name="assign_tenant_color">#26C6DA</color> <!-- Tenant Assign -->
+    <color name="remove_tenant_color">#EF5350</color> <!-- Tenant Remove or House Vacating -->
+    <color name="edit_color">#FF9800</color> <!-- Edit House/Building (Orange) -->
+    <color name="remove_color">#D32F2F</color> <!-- Delete House/Building (Red) -->
+    <color name="light_color">#FAFAFA</color> <!-- Very light shade -->
+    <color name="background_color">#FAFAFA</color> <!-- Light gray (almost white) -->
+    <color name="highlight_color">#FFD54F</color> <!-- Bright yellow for highlighting -->
+
+    <!-- Selected item background (light pastel color) -->
+    <color name="selected_item">#D6EAF8</color> <!-- Soft pastel blue -->
+    <color name="default_item">#FFFFFF</color> <!-- White background -->
+
+    <!-- Text colors -->
+    <color name="selected_text">#154360</color> <!-- Dark blue -->
+    <color name="default_text">#000000</color> <!-- Black -->
+
+    <color name="task_close_primary">#388E3C</color>
+    <color name="task_close_secondary">#66BB6A</color>
+    <color name="ripple_effect">#A5D6A7</color>
+
+    <color name="green_color">#4CAF50</color>
+    <color name="color_add_building">#4CAF50</color>
+    <color name="color_add_building_dark">#388E3C</color>
+
+    <color name="light_gray">#D3D3D3</color>
+    <color name="light_gray_medium">#DCDCDC</color>
+    <color name="lighter_gray">#E0E0E0</color>
+    <color name="lighter_gray_medium">#EAEAEA</color>
+    <color name="lightest_gray">#FAFAFA</color>
+
+</resources>
+
+<!--
+?android:attr/colorBackground	Default background color for the current theme.
+?android:attr/textColorPrimary	Default color for primary text.
+?android:attr/textColorSecondary	Default color for secondary text.
+?android:attr/colorAccent	Accent color used for highlighting.
+?android:attr/windowBackground	Background color for the entire window.
+?android:attr/colorForeground	Default foreground color.
+?android:attr/textColorHint	Default hint text color (even lighter text).
+?android:attr/colorAccent	Accent color (highlighted UI elements).
+?android:attr/colorButtonNormal	Default button background color.
+?android:attr/colorControlActivated	Color for activated UI elements (e.g., switches).
+?android:attr/colorControlHighlight	Highlight color for pressed items.
+?android:attr/colorControlNormal	Normal state color for UI controls.
+-->
